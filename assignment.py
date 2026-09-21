@@ -11,8 +11,8 @@ print(remove_spaces("Python is fun"))
 # Exercise 3
 def count_vowels(text):
     count = 0
-    for i in range(0, len(text)):
-        if text[i] == "a" or text[i] == "e" or text[i] == "i" or text[i] == "o" or text[i] == "u":
+    for i in text:
+        if i in "aeiouAEIOU":
             count += 1
     return count
 print(count_vowels("Python is amazing"))
