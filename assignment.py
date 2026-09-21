@@ -34,8 +34,8 @@ print(count_words("Python makes coding fun"))
 def find_longest_word(text):
     text = text.split()
     longest = text[0]
-    for i in range(0, len(text)):
-        if len(longest) <= len(text[i]):
-            longest = text[i]
+    for word in text:
+        if len(word) > len(longest):
+            longest = word
     return longest
 print(find_longest_word("Learning Python programming"))
